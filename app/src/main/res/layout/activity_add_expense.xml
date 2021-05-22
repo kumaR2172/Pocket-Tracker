@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:src="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backgroundcolor"
+    tools:context="com.example.trackmypocket.AddExpense">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Expense"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editAmount"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:hint=" Amount"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/border"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editSelectDate"
+        android:layout_width="395dp"
+        android:layout_height="38dp"
+
+        android:layout_below="@+id/editAmount"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/border"
+        android:drawableRight="@drawable/ic_date_range_black_24dp"
+
+        android:hint=" Select Date"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+
+
+
+    <EditText
+        android:id="@+id/editExtraNotes"
+        android:layout_width="395dp"
+        android:layout_height="93dp"
+        android:layout_below="@+id/editSelectDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint=" Extra notes"
+        android:inputType="textMultiLine"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:id="@+id/btnAddExpense"
+        android:background="@drawable/borderbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

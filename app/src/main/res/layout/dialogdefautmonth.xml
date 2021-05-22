@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:calendarViewShown="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:datePickerMode="spinner"
+        />
+
+    <Button
+        android:id="@+id/btnUpdateDefaultDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/borderbutton"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
